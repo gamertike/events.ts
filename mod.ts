@@ -7,7 +7,7 @@ export type EventMap = Record<string | symbol, (...args: any[]) => void>;
 /**
  * Type safe event emitter.
  * @example
- * import TypedEventEmitter from 'https://deno.land/x/events.ts/mod.ts';
+ * import TypedEventEmitter from 'https://deno.land/x/events_ts/mod.ts';
  * import EventEmitter from 'https://deno.land/std/node/events.ts';
  *
  * const emitter = new EventEmitter() as TypedEventEmitter<{
