@@ -1,6 +1,6 @@
 /**
  * The event map.
- * @example { message: (message: string) => void }
+ * @example { message(message: string): void }
  */
 export type EventMap = Record<string | symbol, (...args: any[]) => void>;
 
@@ -10,7 +10,7 @@ export type EventMap = Record<string | symbol, (...args: any[]) => void>;
  * import TypedEventEmitter from 'https://deno.land/x/events_ts/mod.ts';
  * import EventEmitter from 'https://deno.land/std/node/events.ts';
  *
- * const emitter = new EventEmitter() as TypedEventEmitter<{ message: (message: string) => void }>;
+ * const emitter = new EventEmitter() as TypedEventEmitter<{ message(message: string): void }>;
  * 
  * emitter.on('message', console.log);
  * emitter.emit('message', 'Hello World');
