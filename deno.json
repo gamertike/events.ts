@@ -1,7 +1,11 @@
 {
-    "lint": {
-        "rules": {
-            "exclude": ["ban-types", "no-explicit-any"]
-        }
-    }
+	"tasks": {
+		"test": "deno run --allow-env example.ts"
+	},
+	"lint": {
+		"rules": {
+			"exclude": ["ban-types", "no-explicit-any"]
+		}
+	},
+	"importMap": "import-map.json"
 }
