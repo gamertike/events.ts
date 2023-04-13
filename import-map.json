@@ -1,6 +1,0 @@
-{
-	"imports": {
-		"events": "https://deno.land/std@0.146.0/node/events.ts",
-		"events.ts": "./mod.ts"
-	}
-}

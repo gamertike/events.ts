@@ -1,7 +1,6 @@
-import TypedEventEmitter from 'events.ts';
-import EventEmitter from 'events';
+import EventEmitter from './mod.ts';
 
-const emitter = new EventEmitter() as TypedEventEmitter<{ message(message: string): void }>;
+const emitter = new EventEmitter<{ message: [message: string] }>();
 
 emitter.on('message', console.log);
-emitter.emit('message', 'Hello World');
+emitter.emit('message', 'Hello, World!');
